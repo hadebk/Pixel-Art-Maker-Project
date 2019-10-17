@@ -1,0 +1,128 @@
+/* [ fonts ] ---------------------------------------------------*/
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins/Poppins-Bold.ttf');
+}
+
+/* ------------------------------------------------------------*/
+
+/* variabels decleration */
+:root {
+    --dark_blue: #05052f;
+    --gold: #fc0;
+}
+
+.main {
+    text-align: center;
+    font-family: 'Poppins-Regular';
+    color: #fff;
+    background-color: var(--dark_blue);
+}
+
+h1 {
+    font-family: 'Poppins-Bold';
+    font-size: 70px;
+    margin: 0.4em 0 0;
+    padding-bottom: 0.2em;
+    color: var(--gold);
+    border-bottom: 1px solid #226;
+}
+
+/* handel (h1) in mobile screen (xs) */
+@media screen and (max-width:767px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+/*-----------------------------------*/
+
+h2 {
+    margin: 1.5em 0 0.5em;
+    font-weight: bold;
+}
+
+h2:first-of-type {
+    margin-bottom: 1em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid #fff;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto 50px;
+}
+
+tr {
+    height: 30px;
+}
+
+td {
+    width: 30px;
+}
+
+#choose-grid-size,
+#color-picker-box {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #226;
+}
+
+#sizePicker label {
+    margin-right: 0.5em;
+}
+
+#sizePicker input[type="number"] {
+    width: 6em;
+    padding: 0.3em 0.3em 0.3em 0.5em;
+    color: #fff;
+    background-color: var(--dark_blue);
+    border: 2px solid #226;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#sizePicker input[type="submit"] {
+    font-size: 16px;
+    padding: 0.5em 1.5em;
+    margin-top: 1.5em;
+    border: 0;
+    color: var(--dark_blue);
+    background-color: var(--gold);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#colorPicker {
+    -webkit-appearance: none;
+    padding: 0;
+    border: none;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#colorPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 25px;
+    padding: 0;
+}
+
+#colorPicker::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 25px;
+    padding: 0;
+}
