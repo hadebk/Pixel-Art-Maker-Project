@@ -7,6 +7,6 @@
 - Then click on any cell to color it in the chosen color.
 
 ## Try it now from here 
-https://hadebk.github.io/Pixel-Art-Maker-Project/index.html
+https://hadebk.github.io/Pixel-Art-Maker-Project/
 
 ## Enjoy :)
